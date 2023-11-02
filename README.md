@@ -6,7 +6,7 @@ An external machine connects to the **VNS** *(virtual network switch)* by append
 ## API
 > How to create an API-system.
 
-An API system can be created by not defining exchange data. So the port waits for the request and can respond. Because without exchange data, the requests are not sent to anyone and are basically useless.
+An API system can be created by not defining exchange data. (`"exchange":"None"`) So the port waits for the request and can respond. Because without exchange data, the requests are not sent to anyone and are basically useless. So you can use it as an API.
 ## Error Codes
 > Types of error codes.
 
