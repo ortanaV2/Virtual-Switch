@@ -5,7 +5,8 @@ import time
 while True:
     try:
         while True:
-            time.sleep(0.1)
+            time.sleep(0.1) #refresh-rate
+
             #connection-queue-check
             with open("queue.json", "r") as data:
                 queue = json.load(data)
