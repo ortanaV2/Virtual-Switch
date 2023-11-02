@@ -63,7 +63,7 @@ while True:
                             else:
                                 refresh_count+=1
                                 if refresh_count == 7000:
-                                    data["res"] = "503" #Service unavailable 
+                                    data["res"] = "E:503" #Service unavailable 
                                     data["req"] = "None"
                                     with open(f"./ports/{port}", "w") as port_data:
                                         json.dump(data, port_data)
