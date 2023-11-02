@@ -62,7 +62,7 @@ while True:
                                 break
                             else:
                                 refresh_count+=1
-                                if refresh_count == 7000:
+                                if refresh_count == 7:
                                     data["res"] = "E:503" #Service unavailable 
                                     data["req"] = "None"
                                     with open(f"./ports/{port}", "w") as port_data:
