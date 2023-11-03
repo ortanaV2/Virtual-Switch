@@ -6,7 +6,7 @@ while True:
     try:
         while True:
             time.sleep(0.1) #refresh-rate
-
+            
             #connection-queue-check
             with open("queue.json", "r") as data:
                 queue = json.load(data)
@@ -48,7 +48,7 @@ while True:
                         pre_res = contact_data["res"]
                         contact_data["req"] = request
                         with open(f"./ports/{exchange}.json", "w") as contact:
-                            json.dump(contact_data, contact)
+                            json.dump(contact_data, contact)   
 
                         refresh_count = 0
                         while True:
@@ -64,7 +64,7 @@ while True:
                                 break
                             else:
                                 refresh_count+=1
-                                if refresh_count == 7:
+                                if refresh_count == 5:
                                     data["res"] = "E:503" #Service unavailable 
                                     data["req"] = "None"
                                     with open(f"./ports/{port}", "w") as port_data:
