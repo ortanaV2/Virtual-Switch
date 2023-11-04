@@ -1,4 +1,4 @@
-# Virtual-Switch [WIP]
+# Virtual-Switch
 > A Virtual-Switch for connecting various machines over a NAS-Server based network to exchange data.
 
 The data exchange is working with JSON-files: `{"req": "None", "res": "None", "exchange": "None"}`.
